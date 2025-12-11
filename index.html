@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanjeev Portfolio</title>
+<link rel="stylesheet" href="style.css">
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- HOME -->
+      <section id="home" class="tilt home-section">
+        <h1>Welcome to Kumar Sanjeev</h1>
+        <p style="color: var(--muted)">Front-End Web Developer • UI Designer</p>
+      </section>
+
+      <!-- HEADER -->
+      <header class="tilt">
+        <div style="display: flex; align-items: center; gap: 12px">
+          <div class="logo">SK</div>
+          <div>
+            <div style="font-weight: 800">Sanjeev Kumar</div>
+            <div style="font-size: 12px; color: var(--muted)">
+              Front-End Developer
+            </div>
+          </div>
+        </div>
+
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a href="https://kumarsanjeev1950.github.io/kumarsanjeev/sanjeev.pdf" download class="btn" style="margin-left:20px;"  target="_blank">Download CV</a>
+        </nav>
+      </header>
+
+      <!-- HERO -->
+      <section class="hero tilt">
+        <div style="flex: 1">
+          <h1>Front-End Developer & UI Designer</h1>
+          <p>
+            I design and build clean, modern and responsive web interfaces focused on 
+            usability, performance and smoother user experience.
+          </p>
+
+          <div class="skills">
+            <div class="chip">HTML</div>
+            <div class="chip">CSS</div>
+            <div class="chip">Tailwind CSS</div>
+            <div class="chip">React</div>
+            <div class="chip">Git & Github</div>
+            <div class="chip">JavaScript</div>
+            <div class="chip">Responsive</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects">
+        <h2 style="text-align: center; margin-top: 20px">Projects</h2>
+
+        <div class="projects">
+          <!-- CARD TEMPLATE -->
+          <!-- (cards same as original, unchanged for brevity) -->
+
+          <!-- ATM -->
+          <div
+            class="card tilt"
+            data-title="ATM Simulation"
+            data-desc="A clean and interactive ATM simulation built with JavaScript, allowing users to perform withdrawals, deposits, and balance checks. Designed with a smooth UI and logical flow that mimics real ATM behavior.
+"
+            data-tech="HTML, CSS, JavaScript"
+            data-live="https://kumarsanjeev1950.github.io/ATM-Simulation/"
+            data-git="https://github.com/kumarsanjeev1950/ATM-Simulation"
+          >
+            <h3>ATM Simulation App</h3>
+            <p>Interactive ATM Simulator With Withdraw, Deposit, And Balance Features.
+            </p>
+            <div class="links">
+               <a class="btn" data-live>Live Demo</a>
+               <a class="btn secondary" data-git>GitHub</a>
+              <button
+                class="btn secondary"
+                onclick="openModal(this.closest('.card'))"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+
+          <!-- EVEN ODD -->
+          <div
+            class="card tilt"
+            data-title="Even-Odd & Table Generator"
+            data-desc="A lightweight utility tool that checks whether a number is even or odd and dynamically generates multiplication tables. Built for speed and simplicity with a clean, responsive interface.
+"
+            data-tech="HTML, CSS, JavaScript"
+            data-live="https://kumarsanjeev1950.github.io/Even-Odd-Finder/"
+            data-git="https://github.com/kumarsanjeev1950/Even-Odd-Finder"
+          >
+            <h3>Number Tool : Even–Odd + Table Generator</h3>
+            <p>Even–Odd Checker With A Dynamic Multiplication Table Generator.
+</p>
+            <div class="links">
+               <a class="btn" data-live>Live Demo</a>
+               <a class="btn secondary" data-git>GitHub</a>
+              <button
+                class="btn secondary"
+                onclick="openModal(this.closest('.card'))"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+
+          <!-- CALCULATOR -->
+          <div
+            class="card tilt"
+            data-title="Modern Calculator"
+            data-desc="A modern glassmorphism-styled calculator featuring responsive design, smooth button interactions, and accurate arithmetic operations. Built to demonstrate UI aesthetics along with functional JavaScript logic.
+"
+            data-tech="HTML, CSS, JavaScript"
+            data-live="https://kumarsanjeev1950.github.io/modern_calculator/"
+            data-git="https://github.com/kumarsanjeev1950/modern_calculator"
+          >
+            <h3>Modern UI Calculator</h3>
+            <p>A Stylish Glassmorphism Calculator With Responsive Layout.
+            </p>
+            <div class="links">
+               <a class="btn" data-live>Live Demo</a>
+               <a class="btn secondary" data-git>GitHub</a>
+              <button
+                class="btn secondary"
+                onclick="openModal(this.closest('.card'))"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+
+          <!-- Currency Converter -->
+          <div
+            class="card tilt"
+            data-title="Currency Converter"
+            data-desc="A real-time currency converter built with a clean glassmorphism interface. Uses live exchange rate APIs to convert between currencies instantly with a responsive and user-friendly design.
+"
+            data-tech="HTML, CSS, JavaScript"
+            data-live="https://kumarsanjeev1950.github.io/Currency-Converter/"
+            data-git="https://github.com/kumarsanjeev1950/Currency-Converter/"
+          >
+            <h3>Live Currency Converter</h3>
+            <p>
+              A Live Currency Converter With Real-Time Exchange Rates.
+            </p>
+            <div class="links">
+               <a class="btn" data-live>Live Demo</a>
+               <a class="btn secondary" data-git>GitHub</a>
+               <button
+                class="btn secondary"
+                onclick="openModal(this.closest('.card'))"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+
+          <!-- TIC TAC TOE -->
+          <div
+            class="card tilt"
+            data-title="Tic Tac Toe"
+            data-desc="A fast, responsive Tic-Tac-Toe game built with JavaScript, featuring win detection, reset controls, and a clean interface. Designed for smooth user interaction across all devices.
+"
+            data-tech="HTML, CSS, JavaScript"
+            data-live="https://kumarsanjeev1950.github.io/Tic-Tac-Toe/"
+            data-git="https://github.com/kumarsanjeev1950/Tic-Tac-Toe"
+          >
+            <h3>Tic-Tac-Toe Game</h3>
+            <p>Responsive JavaScript Tic-Tac-Toe Game With Win Detection.
+            </p>
+            <div class="links">
+              <a class="btn" data-live>Live Demo</a>
+              <a class="btn secondary" data-git>GitHub</a>
+              <button
+                class="btn secondary"
+                onclick="openModal(this.closest('.card'))"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="tilt section-card">
+        <h2>About Me</h2>
+        <p style="color:rgba(255, 0, 200, 0.9);;">
+        I’m Sanjeev Kumar, a Front-End Web Developer who enjoys turning ideas into clean, responsive and user-focused interfaces.
+        I specialize in HTML, CSS, JavaScript and modern UI styling, creating websites that look great on every device.
+        I’m constantly improving my skills, exploring new design systems, and building projects that combine functionality with smoother user experience.
+        </p>
+      </section>
+
+      <!-- CONTACT -->
+      <section
+        id="contact"
+        class="tilt section-card"
+        style="text-align: center"
+      >
+        <h2>Contact</h2>
+        <p style="color: rgba(255, 0, 200, 0.9);">Email: kumarsanjeev1950@gmail.com</p>
+
+        <div class="socials">
+          <a
+            href="https://instagram.com/kumarsanjeev1950"
+            target="_blank"
+            aria-label="instagram"
+            class="instagram-icon"
+          >
+            <img
+              src="instagram(2).png"
+              alt="instagram Logo"
+              width="35"
+              height="35"
+            />
+          </a>
+          <a
+            href="https://facebook.com/kumarsanjeev1950"
+            target="_blank"
+            aria-label="facebook"
+            class="facebook-icon"
+          >
+            <img
+              src="facebook.png"
+              alt="facebook Logo"
+              width="35"
+              height="35"
+            />
+          </a>
+          <a
+            href="https://x.com/Sanjeev_1950"
+            target="_blank"
+            aria-label="X"
+            class="x-icon"
+          >
+            <img src="twitter.png" 
+            alt="X Logo" 
+            width="35" 
+            height="35" />
+          </a>
+
+           <a
+            href="https://github.com/kumarsanjeev1950"
+            target="_blank"
+            aria-label="github"
+            class="github-icon"
+          >
+            <img
+              src="github.png"
+              alt="github Logo"
+              width="35"
+              height="35"
+            />
+           <a
+            href="https://linkedin.com/kumarsanjeev1950"
+            target="_blank"
+            aria-label="linkedin"
+            class="linkedin-icon"
+          >
+            <img
+              src="linkedin.png"
+              alt="linkedin Logo"
+              width="35"
+              height="35"
+            />
+          </a>
+            <a
+            href="https://wa.me/919754321950"
+            target="_blank"
+            aria-label="WhatsApp"
+            class="WhatsApp-icon"
+          >
+            <img
+              src="whatsapp.png"
+              alt="WhatsApp Logo"
+              width="35"
+              height="35"
+            />
+          </a>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="tilt section-card">
+        © 2025 Sanjeev Kumar | Front-End Developer & UI Designer. All Rights Reserved.
+      </footer>
+    </div>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal" onclick="closeModal(event)">
+      <div class="modal-card">
+        <div class="modal-close" onclick="closeModal(event)">✕</div>
+        <h2 id="m-title"></h2>
+        <p id="m-tech" style="color: var(--muted)"></p>
+        <p id="m-desc"></p>
+
+        <div style="display: flex; gap: 10px; margin-top: 10px">
+          <a id="m-live" class="btn" target="_blank">Open Live</a>
+          <a id="m-git" class="btn secondary" target="_blank">View Code</a>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
